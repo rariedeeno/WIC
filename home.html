@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        WIC Coffee
+    </title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" type="text/css" href="/res/bootstrap-5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/res/bootstrap-5.3.0-alpha1/dist/css/carousel.css">
+    <script src="/res/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">WIC Coffee</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>View Membership Perks.</h1>
+                            <p>Check our membership perks to know what is in store for you.</p>
+                            <p><a class="btn btn-lg btn-primary" href="Pricing.html">Check Plans</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>View our store!</h1>
+                            <p>Check out merchandises.</p>
+                            <p><a class="btn btn-lg btn-primary" href="Pricing.html">Shop now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Cash-back!</h1>
+                            <p>Earn a cash-back when reloading!</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <br />
+
+        <div class="container marketing">
+
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 border-bottom">What we offer</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            
+                        </div>
+                        <div>
+                            <h3 class="fs-2">Membership Plans</h3>
+                            <p>View our membership plans to see what is suitable for you.</p>
+                            <a href="pricing.html" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            
+                        </div>
+                        <div>
+                            <h3 class="fs-2">Product Discounts</h3>
+                            <p>Enjoy membership discounts for coffee products and other merchandises.</p>
+                            <a href="pricing.html"" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                            
+                        </div>
+                        <div>
+                            <h3 class="fs-2">Superb Coffee</h3>
+                            <p>Freshly made coffee made with the best ingredients.</p>
+                            <a href="pricing.html" class="btn btn-primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.container -->
+        <!-- FOOTER -->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+
+                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
